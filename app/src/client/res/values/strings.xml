@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_time">Choose the time</string>
+    <string name="reset_all">Reset All</string>
+
+    <string name="file_provider_name">com.client.android.fileprovider</string>
+
+    <string-array name="template_repeat_cases">
+        <item>Every Monday</item>
+        <item>Every Tuesday</item>
+        <item>Every Wednesday</item>
+        <item>Every Thursday</item>
+        <item>Every Friday</item>
+        <item>Every Saturday</item>
+        <item>Every Sunday</item>
+    </string-array>
+</resources>

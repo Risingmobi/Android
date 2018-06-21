@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.alex.tur">
+
+    <application
+        android:name=".client.ClientApplication"
+        tools:replace="name">
+        <activity
+            android:name=".client.ui.splash.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".client.ui.login.AuthActivity"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".client.ui.main.MainActivity"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".client.ui.profile.edit.ClientEditActivity"
+            android:theme="@style/EditProfileTheme" />
+        <activity
+            android:name=".client.ui.address.map.AddressMapActivity"
+            android:label="@string/title_activity_select_address"
+            android:theme="@style/AddAddressTheme" />
+        <activity android:name=".client.ui.address.search.AddressSearchActivity" />
+        <activity android:name=".client.ui.services.ServicesListActivity" />
+        <activity android:name=".client.ui.companies.CompanyListActivity" />
+        <activity android:name=".client.ui.tutorial.TutorialActivity" />
+        <activity android:name=".client.ui.template.TemplateTimeActivity" />
+        <activity android:name=".client.ui.comment.CommentActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/file_provider_name"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".client.ui.history.HistoryActivity"></activity>
+    </application>
+
+</manifest>

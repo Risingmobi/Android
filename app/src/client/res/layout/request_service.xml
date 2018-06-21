@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:parentTag="android.support.design.widget.CoordinatorLayout">
+
+    <LinearLayout
+        android:id="@+id/bottomSheetLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.alex.tur.helper.MyBottomSheetBehavior"
+        android:background="@color/colorBackground"
+        android:elevation="16dp">
+
+        <include
+            android:id="@+id/addressView"
+            layout="@layout/item_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+
+        <include
+            android:id="@+id/serviceView"
+            layout="@layout/item_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"/>
+
+        <include
+            android:id="@+id/companyView"
+            layout="@layout/item_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"/>
+
+        <include
+            android:id="@+id/commentView"
+            layout="@layout/item_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <include
+            android:id="@+id/payCardView"
+            layout="@layout/item_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_gravity="start"
+                android:layout_marginStart="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$00.00"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:textStyle="bold"/>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/validatePaymentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AccentButton"
+            android:text="Validate payment"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+
+</merge>

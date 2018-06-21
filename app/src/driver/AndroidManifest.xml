@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.alex.tur">
+
+    <application
+        android:name=".driver.DriverApplication"
+        tools:replace="name">
+        <activity
+            android:name=".driver.ui.splash.DriverSplashActivity"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".driver.ui.login.AuthActivity"
+            android:theme="@style/LoginTheme" />
+        <activity
+            android:name=".driver.ui.main.MainActivity"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".driver.ui.profile.edit.DriverEditActivity"
+            android:theme="@style/EditProfileTheme" />
+        <activity android:name=".driver.ui.servicelist.DriverServicesActivity" />
+
+        <receiver
+            android:name=".driver.broadcast.DriverLocationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".driver.ui.profile.edit_car.EditCarActivity"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/file_provider_name"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

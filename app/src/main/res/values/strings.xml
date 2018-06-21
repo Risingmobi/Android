@@ -1,0 +1,37 @@
+<resources>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_select_address">Map</string>
+    <string name="empty_password">Password is empty</string>
+    <string name="password_too_short">Password is to short %s</string>
+    <string name="empty_email">Email is empty</string>
+    <string name="invalid_email">Email is invalid</string>
+    <string name="empty_name">Name is empty</string>
+    <string name="short_password">Password short %s</string>
+    <string name="some_error">Some error occurred</string>
+    <string name="internal_server_error">Internal server error</string>
+    <string name="error_no_network">No network connection</string>
+    <string name="error_connection">Connection error</string>
+    <string name="error_email_or_password_incorrect">User email or password are incorrect</string>
+    <string name="error_no_permission">You have no permission</string>
+    <string name="choose_service">Choose Service</string>
+    <string name="reset">Reset</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search</string>
+    <string name="error_credentials_does_not_exist">Applications with this credentials does not exists</string>
+    <string name="error_can_not_calculate_nearest_driver">Can\'t calculate nearest driver</string>
+    <string name="error_can_not_calculate_duration_and_distance">Can\'t calculate duration and distance</string>
+    <string name="no_content">No content</string>
+    <string name="error_timeout">Connection timeout</string>
+    <string name="empty_purchases">Now there are no Purchased Services.\n To order service go to</string>
+    <string name="request_service">Request Service</string>
+    <string name="retry">Retry</string>
+    <string name="error_no_active_orders">No active orders</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="edit">Edit</string>
+    <string name="channel_name_main">Main channel</string>
+    <string name="channel_description_main">Main channel description</string>
+    <string name="comment">Comment</string>
+    <string name="image">Image</string>
+    <string name="reload">Reload</string>
+</resources>
